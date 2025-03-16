@@ -230,18 +230,18 @@ mm2.add("(max-width: 1250px)", () => {
     opacity: 1,
     duration: 2,
     scrollTrigger: {
-      trigger: 'img.at_school',
+      trigger: 'div.school',
       start: 'top 20%',
       end: 'top 0%',
       //numeric value increases smoothness
       //1 - not smooth
       //10 - very smooth
       scrub: 5,
-        markers: {
-            startColor: 'red',
-            endColor: 'black',
-            fontSize: '2em',
-        },
+        // markers: {
+        //     startColor: 'red',
+        //     endColor: 'black',
+        //     fontSize: '2em',
+        // },
       //we can also pause animation
       toggleActions: 'restart none none none',
     }
@@ -253,18 +253,18 @@ mm2.add("(max-width: 1250px)", () => {
     opacity: 1,
     duration: 2,
     scrollTrigger: {
-      trigger: 'div.at_school',
+      trigger: 'img.at_school',
       start: 'top 20%',
       end: 'top 0%',
       //numeric value increases smoothness
       //1 - not smooth
       //10 - very smooth
       scrub: 5,
-        markers: {
-            startColor: 'red',
-            endColor: 'black',
-            fontSize: '2em',
-        },
+        // markers: { 
+        //     startColor: 'red',
+        //     endColor: 'black',
+        //     fontSize: '2em',
+        // },
       //we can also pause animation
       toggleActions: 'restart none none none',
     }
