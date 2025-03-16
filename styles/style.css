@@ -206,14 +206,18 @@ html, body {width: auto!important; overflow-x: hidden!important}
     img.at_school{
         width: 30vw;
         transform: translateX(0);
-        zoom: 3;
+        /* zoom: 3; */
+        transform: scale(2);
+        /* transform-origin: top; */
         opacity: 0;
     }
     
     div.at_school{
         /* width: 30vw; */
         transform: translateX(0);
-        zoom: 3;
+        /* zoom: 3; */
+        transform: scale(2);
+        /* transform-origin: top; */
         opacity: 0;
     }
 
