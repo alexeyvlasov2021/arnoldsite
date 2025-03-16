@@ -1,0 +1,262 @@
+body{
+    margin: 0;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 1.2em;
+}
+
+div.top{
+    width: 100vw;
+    z-index: 100;
+    background-image: url('../images/image.png');
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    width: 800px;
+    height: 350px;
+    background-color: hsla(0, 0%, 0%, 0.697);
+    opacity: 0;
+    transform: translateY(200px);
+
+}
+
+div.inner-navigation{
+    width: 75%;
+    padding: 60px 15px;
+    border-bottom: 3px solid white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* gap: 50px; */
+}
+
+.navigation a{
+    margin-top: 50px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navigation a:hover{
+    text-decoration: underline;
+}
+
+div.socials{
+    /* overlap with below text if chosen 'position: absolute' 'right: 0' */
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    position: relative;
+    margin-right: 70px;
+    /* top: -440px; */
+}
+
+div.mid{
+    /* margin-top: 50px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.midtext{
+    transform: translateX(-2500px);
+}
+
+div.midtext2{
+    transform: translateX(2500px);
+}
+
+div.midtext, div.midtext2{
+    width: 60vw;
+}   
+
+/* div.midtext, div.midtext2, div.at_school{
+    padding-left: 50px;
+    padding-right: 50px;
+} */
+
+div.midtext, div.midtext2{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+div.midtext2, div.at_school, footer{
+    margin-top: 40px;
+}
+
+div.at_school{
+    font-size:1.2rem;
+}
+
+div.school{
+    width: 60vw;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+img.at_school{
+    width: 27vw;
+    transform: translateX(-2500px);
+}
+
+div.at_school{
+    width: 30vw;
+    transform: translateX(2500px);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social_small{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100px;
+}
+
+.footer_text{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* used to monitor what element goes out of the viewport area */
+/* * {
+    outline: 1px solid red;
+} */
+
+/* fixes problem with left shift on mobile devices in Chrome Dev tool
+optional. see solution below
+*/
+/* html, body {
+    width: 100%;
+    overflow-x: hidden;
+} */
+
+/* another solution */
+html, body {width: auto!important; overflow-x: hidden!important} 
+
+
+@media (max-width: 1250px) {
+
+    .navigation a{
+        font-size: 0.9rem;
+    }
+    
+    div.top{
+        width: 100vw;
+        z-index: 100;
+        background-image: url('../images/image.png');
+        height: 675px;
+        background-size: cover;
+        background-position: center;
+        clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
+    }
+    div.socials{
+        /* overlap with below text if chosen 'position: absolute' 'right: 0' */
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+    }
+
+    div.mid{
+        margin-top: 100px;
+    }
+
+    div.midtext{
+        transform: translateX(-2500px);
+    }
+    
+    div.midtext2{
+        transform: translateX(2500px);
+    }
+
+    div.midtext, div.midtext2, div.at_school{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    div.at_school{
+        width: 60vw;
+    }
+
+    img.at_school{
+        width: 30vw;
+        transform: translateX(0);
+        zoom: 3;
+        opacity: 0;
+    }
+    
+    div.at_school{
+        /* width: 30vw; */
+        transform: translateX(0);
+        zoom: 3;
+        opacity: 0;
+    }
+
+    div.midtext2, div.at_school, footer{
+        margin-top: 40px;
+    }
+
+    div.school{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* this image was withou width
+    this provoked shift of the body in Chrome Dev Tool mobile device emulation */
+    img.at_school{
+        width: 100vw;
+    }
+    
+    footer {
+        background-color: black;
+        color: white;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .social_small{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100px;
+    }
+
+    .footer_text{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+  }
+
+
