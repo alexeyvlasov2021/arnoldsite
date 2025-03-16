@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
   gsap.registerPlugin(ScrollTrigger)
   // gsap code here!
 
+  //adding animation triggered by mouse hover
   let top = document.querySelector("div.top");
-
   let animation = gsap.to("div.navigation", {
     paused: true,
     opacity: 1,
@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       transform: 'translateX(0)',
       duration: 2,
       scrollTrigger: {
-        trigger: '.at_school',
+        trigger: 'img.at_school',
         start: 'top 70%',
         end: 'top 50%',
         //numeric value increases smoothness
@@ -224,24 +224,47 @@ mm2.add("(max-width: 1250px)", () => {
     }
   })
 
-  gsap.to('.at_school', {
+  gsap.to('img.at_school', {
     // transform: 'translateX(0)',
     zoom: 1,
     opacity: 1,
     duration: 2,
     scrollTrigger: {
       trigger: 'img.at_school',
-      start: 'top 70%',
-      end: 'top 50%',
+      start: 'top 20%',
+      end: 'top 0%',
       //numeric value increases smoothness
       //1 - not smooth
       //10 - very smooth
-      scrub: 2,
-      //   markers: {
-      //       startColor: 'blue',
-      //       endColor: 'black',
-      //       fontSize: '2em',
-      //   },
+      scrub: 5,
+        markers: {
+            startColor: 'red',
+            endColor: 'black',
+            fontSize: '2em',
+        },
+      //we can also pause animation
+      toggleActions: 'restart none none none',
+    }
+  })
+
+  gsap.to('div.at_school', {
+    // transform: 'translateX(0)',
+    zoom: 1,
+    opacity: 1,
+    duration: 2,
+    scrollTrigger: {
+      trigger: 'div.at_school',
+      start: 'top 20%',
+      end: 'top 0%',
+      //numeric value increases smoothness
+      //1 - not smooth
+      //10 - very smooth
+      scrub: 5,
+        markers: {
+            startColor: 'red',
+            endColor: 'black',
+            fontSize: '2em',
+        },
       //we can also pause animation
       toggleActions: 'restart none none none',
     }
