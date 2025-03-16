@@ -227,7 +227,7 @@ mm2.add("(max-width: 1250px)", () => {
   gsap.to('img.at_school', {
     // transform: 'translateX(0)',
     // zoom: 1,
-    transform: 'scale(1)',
+    // transform: 'scale(1)',
     opacity: 1,
     duration: 2,
     scrollTrigger: {
@@ -251,7 +251,7 @@ mm2.add("(max-width: 1250px)", () => {
   gsap.to('div.at_school', {
     // transform: 'translateX(0)',
     // zoom: 1,
-    transform: 'scale(1)',
+    // transform: 'scale(1)',
     opacity: 1,
     duration: 2,
     scrollTrigger: {
