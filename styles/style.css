@@ -207,7 +207,7 @@ html, body {width: auto!important; overflow-x: hidden!important}
         width: 30vw;
         transform: translateX(0);
         /* zoom: 3; */
-        transform: scale(2);
+        /* transform: scale(2); */
         /* transform-origin: top; */
         opacity: 0;
     }
@@ -216,7 +216,7 @@ html, body {width: auto!important; overflow-x: hidden!important}
         /* width: 30vw; */
         transform: translateX(0);
         /* zoom: 3; */
-        transform: scale(2);
+        /* transform: scale(2); */
         /* transform-origin: top; */
         opacity: 0;
     }
