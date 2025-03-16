@@ -32,12 +32,12 @@ div.navigation{
 }
 
 div.inner-navigation{
-    width: 75%;
+    width: 55%;
     padding: 60px 15px;
     border-bottom: 3px solid white;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     /* gap: 50px; */
 }
 
